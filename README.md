@@ -196,7 +196,7 @@ Para guardar el mapa
 ggsave("AnthribidaeGuatemalaDepartamentoEspecies.jpg")
 ```
 
-## Mapa de Guatemala con departamentos y coloreado por número de especies y con puntos
+## Mapa de Guatemala con registros de ocurrencia
 
 ```
 ggplot(data = world) +
@@ -217,9 +217,10 @@ geom_point(data = anthrigt, aes(x=decimalLongitude, y = decimalLatitude, color=R
                          style = north_arrow_fancy_orienteering) +
   theme_bw()
 
-ggsave("AnthribidaeGuatemalaPointsDeptoYellow.jpg")
+Para guardar el mapa
 
-ggsave("AnthribidaeGuatemalaPorEspecieDepartamentoPUNTOS.png")
+```
+ggsave("AnthribidaeGuatemalaPointsDeptoGreen.jpg")
 
 ```
 
