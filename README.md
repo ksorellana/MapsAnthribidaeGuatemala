@@ -221,6 +221,7 @@ geom_point(data = anthrigt, aes(x=decimalLongitude, y = decimalLatitude, color=R
                          pad_x = unit(0.75, "in"), pad_y = unit(0.3, "in"),
                          style = north_arrow_fancy_orienteering) +
   theme_bw()
+```
 
 Para guardar el mapa
 
