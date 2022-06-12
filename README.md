@@ -1,6 +1,6 @@
 # Anthribidae of Guatemala distribution map in R
 # Mapa de distribución de Anthribidae de Guatemala en R
-K. Samanta Orellana, 01 feb 2022
+K. Samanta Orellana, 02 jan 2022
 
 Distribution map of occurrence records of Anthribidae in Guatemala up to January 2002.
 Mapa de distribución de registros de ocurrencia de Anthribidae hasta enero de 2022. 
