@@ -1,5 +1,5 @@
 #MAPAS FINALES PARA EL ARTÍCULO DE ANTHRIBIDAE DE GUATEMALA 
-K. Samanta Orellana, 1 enero, 2022
+K. Samanta Orellana, 2 jan 2022
 
 
 ##Construcción de mapas con tidyverse, sf y ggplot2
@@ -71,9 +71,8 @@ crs(limitExtent) <- "+proj=longlat +datum=WGS84 +no_defs"
 #Abrir directorio donde guardamos y extrajimos las capas
 setwd("C://Coding")
 
-#Cargar capas de Guatemala (descargadas de DivaGis y URL-IARNA y extraídos en la carpeta que uso para R)
+#Cargar capas de Guatemala (descargadas de DivaGis y extraídos en la carpeta que uso para R)
 #DivaGis: https://www.diva-gis.org/gdata
-#URL-IARNA:https://sie.url.edu.gt/capas-geograficas/
 
 #Para este mapa uso:
 gua_dep <- st_read("GTM_adm1.shp")
@@ -86,10 +85,9 @@ gua_dep <- st_read("GTM_adm1.shp")
 gua_mun <- st_read("GTM_adm2.shp")
 gua_rios <- st_read("GTM_water_lines_dcw.shp")
 gua_lagos <- st_read("GTM_water_areas_dcw.shp")
-gua_sigap <- st_read("sigap_2019-gtm_corr-iarna.shp")
 
 #Para ver preliminarmente alguna de las capas cargadas
-plot(gua_sigap)
+plot(gua_pais)
 
 #Cargar el (los) archivo(s) con los puntos (especie -u otra variable-, lat, long)
 #Abrir directorio
@@ -120,7 +118,7 @@ gua_dep_ant <- gua_dep %>%
 	
 	###Si las columnas tienen nombres distintos, se puede hacer esto, por ejemplo:
 	left_join(especies,
-            by = c("NAME_1" = "departamento"))
+            by = c("NAME_1" = "departamento")
 
 #Para revisar la tabla obtenida
 gua_dep_ant
